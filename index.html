@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Valentine Day</title>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
         body {
-  height: 100vh;
+  padding-top: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +38,7 @@
 }
 
 .card-front:before {
+  
   content:"";
   position: absolute;
   width: 280px;
@@ -226,6 +228,24 @@
     transform: scale(1.1) rotate(-45deg);
   }
 }
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+  object-fit: cover;
+}
+.vo{
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 
     </style>
@@ -241,10 +261,21 @@
         <div class="card-inside">
           <div class="text-one">Happy
           </div>
-          <div class="heart"></div>
-          <div class="smile"></div>
-          <div class="eyes"></div>
+          <div class="heart"> </a></div>
+          <div class="smile"> </a></div>
+          <div class="eyes">  </div>
       </div>
       </div>
+      <div class="vo">
+        <div class="video-container">
+          <video id="background-video" autoplay loop>
+            <source src="image/va.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      
+      
+      
 </body>
 </html>
